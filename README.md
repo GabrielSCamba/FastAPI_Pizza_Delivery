@@ -1,10 +1,10 @@
 # 🍕 FastAPI Pizza Delivery
 
-Este é um projeto de API RESTful desenvolvido com **FastAPI** que simula um sistema de delivery de pizza. O sistema permite o cadastro e autenticação de usuários, criação de pedidos, adição/remoção de itens, e controle de permissões para usuários admin.
+This is a **RESTful API** project built with **FastAPI** that simulates a pizza delivery system. The application allows user registration and authentication, order creation, item addition/removal, and permission control for admin users.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [SQLAlchemy](https://www.sqlalchemy.org/)
@@ -17,68 +17,68 @@ Este é um projeto de API RESTful desenvolvido com **FastAPI** que simula um sis
 
 ---
 
-## ⚙️ Funcionalidades
+## ⚙️ Features
 
-- 🔐 Autenticação com JWT
-- 👤 Criação de conta com e-mail único
-- ✅ Verificação de permissões de usuário (admin vs. comum)
-- 📦 Criação de pedidos
-- ➕ Adição de itens ao pedido
-- ➖ Remoção de itens do pedido
-- 🧾 Cálculo automático do preço total do pedido
-- 🧩 Validação de entradas via Pydantic
-- 🔄 Migrações de banco de dados com Alembic
+- 🔐 JWT Authentication
+- 👤 Account creation with unique email constraint
+- ✅ User permission checks (admin vs regular)
+- 📦 Order creation
+- ➕ Add items to an order
+- ➖ Remove items from an order
+- 🧾 Automatic total order price calculation
+- 🧩 Input validation using Pydantic
+- 🔄 Database migrations using Alembic
 
 ---
 
-## 🛠️ Como rodar localmente
+## 🛠️ How to Run Locally
 
-### 1. Clone o repositório
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/seu-usuario/FastAPI_Pizza_Delivery.git
+git clone https://github.com/your-username/FastAPI_Pizza_Delivery.git
 cd FastAPI_Pizza_Delivery
 ```
 
-### 2. Crie e ative um ambiente virtual
+### 2. Create and activate a virtual environment
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # No Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### 3. Instale as dependências
+### 3. Install the dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure o banco de dados
+### 4. Set up the database
 
 ```bash
 alembic upgrade head
 ```
 
-### 5. Rode a aplicação
+### 5. Run the application
 
 ```bash
 uvicorn main:app --reload
 ```
 
-📬 Endpoints principais
+---
 
-- POST /create_account: Cria novo usuário
+## 📬 Main Endpoints
 
-- POST /login: Gera token JWT
+- `POST /create_account`: Create a new user
+- `POST /login`: Generate JWT token
+- `POST /order`: Create a new order
+- `POST /order/add-item`: Add item to order
+- `POST /order/remove-item/{id}`: Remove item from order
+- `POST /order/conclude/{id}`: Conclude order
 
-- POST /order: Cria novo pedido
+---
 
-- POST /order/add-item: Adiciona item a um pedido
+## 🧑‍💻 Author
 
-- POST /order/remove-item/{id}: Remove item
-
-- POST /order/conclude/{id}: Conclui pedido
-
-🧑‍💻 Autor
-Gabriel Camba
+**Gabriel Camba**  
 [LinkedIn](https://www.linkedin.com/in/gabriel-camba-153b5b131/)
