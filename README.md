@@ -81,4 +81,4 @@ uvicorn main:app --reload
 ## 🧑‍💻 Author
 
 **Gabriel Camba**  
-[LinkedIn](https://www.linkedin.com/in/gabriel-camba-153b5b131/)
+[LinkedIn](https://www.linkedin.com/in/gabriel-camba-153b5b131/
